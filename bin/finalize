@@ -18,7 +18,5 @@ popd
 
 $output_dir/finalize "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" "$DEPS_IDX" "$PROFILE_DIR"
 
-cat <<EOF >> $PROFILE_DIR/0_java.sh
-export JAVA_HOME=$DEPS_DIR/jdk8u222-b10
-export PATH=$JAVA_HOME/bin:$PATH
-EOF
+echo "export JAVA_HOME=$DEPS_DIR/jdk8u222-b10" >> $PROFILE_DIR/0_java.sh
+echo 'export PATH=$JAVA_HOME/bin:$PATH' >> $PROFILE_DIR/0_java.sh
