@@ -20,5 +20,3 @@ $output_dir/supply "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" "$DEPS_IDX"
 curl -OL https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u222-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u222b10.tar.gz
 tar -xf OpenJDK8U-jdk_x64_linux_hotspot_8u222b10.tar.gz
 mv jdk8u222-b10/ $DEPS_DIR/
-export JAVA_HOME=$DEPS_DIR/jdk8u222-b10
-export PATH=$JAVA_HOME/bin:$PATH
