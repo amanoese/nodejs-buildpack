@@ -20,3 +20,4 @@ $output_dir/finalize "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" "$DEPS_IDX" "$PROFILE
 
 echo "export JAVA_HOME=$DEPS_DIR/jdk8u222-b10" >> $PROFILE_DIR/0_java.sh
 echo 'export PATH=$JAVA_HOME/bin:$PATH' >> $PROFILE_DIR/0_java.sh
+chmod +x $PROFILE_DIR/0_java.sh
